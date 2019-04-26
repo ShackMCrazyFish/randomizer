@@ -2,9 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     
-    let getRandom = (min, max) => Math.round(Math.random() * (max - min) + min);
+    let getRandom = (min, max) => Math.floor(Math.random() * (parseInt(max) - parseInt(min) + 1) ) + parseInt(min);
 
-    let genBtn = document.getElementById("genBtn");
+    let genBtn = document.getElementById("genBtn"),
+        result = document.getElementById("result");
     genBtn.addEventListener("click", randoming);
 
     function randoming() {
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let third = second + getRandom(x3, y3);
         let fourth = third + getRandom(x4, y4);
         
-        console.log(first, second, third, fourth);
+        result.innerHTML = first + " " + second + " " + third + " " + fourth;
     }
 
 })

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Randomizer</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
@@ -16,28 +15,29 @@
                 <div class="inputs">
                     <div class="form-group row">
                         <label for=""></label>
-                        <input type="number" name="" id="x1" value="35">
-                        <input type="number" name="" id="y1" value="94">
+                        <input type="number" name="" id="x1" min="0" max="100">
+                        <input type="number" name="" id="y1" min="0" max="100">
                     </div>
                     <div class="form-group row">
                         <label for=""></label>
-                        <input type="number" name="" id="x2" value="35">
-                        <input type="number" name="" id="y2" value="94">
+                        <input type="number" name="" id="x2" min="0" max="100">
+                        <input type="number" name="" id="y2" min="0" max="100">
                     </div>
                     <div class="form-group row">
                         <label for=""></label>
-                        <input type="number" name="" id="x3" value="35">
-                        <input type="number" name="" id="y3" value="94">
+                        <input type="number" name="" id="x3" min="0" max="100">
+                        <input type="number" name="" id="y3" min="0" max="100">
                     </div>
                     <div class="form-group row">
                         <label for=""></label>
-                        <input type="number" name="" id="x4" value="35">
-                        <input type="number" name="" id="y4" value="94">
+                        <input type="number" name="" id="x4" min="0" max="100">
+                        <input type="number" name="" id="y4" min="0" max="100">
                     </div>
                     <div class="form-group row">
                         <input type="button" id="genBtn" value="Сгенерировать">
                     </div>
                 </div>
+                <div id="result" class="result"></div>
             </div>
         </div>
     </div>
