@@ -30,17 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
         'packages': ['corechart']
     });
     
-    function drawChart(first, second, third, fourth) {
+    function drawChart(a, b, c, d) {
         var data = google.visualization.arrayToDataTable([
-            ['Index', 'Value'],
-            ['1', first],
-            ['2', second],
-            ['3', third],
-            ['4', fourth]
+            ['Index', 'Значение'],
+            ['1', a],
+            ['2', b],
+            ['3', c],
+            ['4', d]
         ]);
     
         var options = {
-            title: 'Company Performance',
+            title: 'Заголовок',
             curveType: 'function',
             legend: {
                 position: 'bottom'
