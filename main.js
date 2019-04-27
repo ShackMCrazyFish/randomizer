@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
             x4 = document.getElementById("x4").value,
             y4 = document.getElementById("y4").value;
         
-        let first = getRandom(x1, y1);
-        let second = first + getRandom(x2, y2);
-        let third = second + getRandom(x3, y3);
-        let fourth = third + getRandom(x4, y4);
+        let first = getRandom(x1, y1),
+            second = first + getRandom(x2, y2),
+            third = second + getRandom(x3, y3),
+            fourth = third + getRandom(x4, y4);
         
         result.innerHTML = first + " " + second + " " + third + " " + fourth;
         drawChart(first, second, third, fourth);

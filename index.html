@@ -10,32 +10,48 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-5">
                 <div class="inputs">
                     <div class="form-group row">
-                        <label for=""></label>
-                        <input type="number" name="" id="x1" min="0" max="100" value="18">
-                        <input type="number" name="" id="y1" min="0" max="100" value="43">
+                        <label for="" class="col-sm-5 col-form-label">Первая координата</label>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="x1" max="100" value="18">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="y1" max="100" value="43">
+                        </div>
                     </div>
                     <div class="form-group row">
-                        <label for=""></label>
-                        <input type="number" name="" id="x2" min="0" max="100" value="33">
-                        <input type="number" name="" id="y2" min="0" max="100" value="64">
+                        <label for="" class="col-sm-5 col-form-label">Вторвая координата</label>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="x2" max="100" value="18">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="y2" max="100" value="43">
+                        </div>
                     </div>
                     <div class="form-group row">
-                        <label for=""></label>
-                        <input type="number" name="" id="x3" min="0" max="100" value="32">
-                        <input type="number" name="" id="y3" min="0" max="100" value="85">
+                        <label for="" class="col-sm-5 col-form-label">Третья координата</label>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="x3" max="100" value="18">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="y3" max="100" value="43">
+                        </div>
                     </div>
                     <div class="form-group row">
-                        <label for=""></label>
-                        <input type="number" name="" id="x4" min="0" max="100" value="54">
-                        <input type="number" name="" id="y4" min="0" max="100" value="72">
+                        <label for="" class="col-sm-5 col-form-label">Четвертая координата</label>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="x4" max="100" value="18">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="number" name="" id="y4" max="100" value="43">
+                        </div>
                     </div>
                     <div class="form-group row">
-                        <input type="button" id="genBtn" value="Сгенерировать">
+                        <input type="button" id="genBtn" class="btn btn-primary mb-2" value="Сгенерировать">
                     </div>
                 </div>
                 <div id="result" class="result"></div>
